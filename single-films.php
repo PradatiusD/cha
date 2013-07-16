@@ -3,10 +3,11 @@
 /*
 Template Name: Portfolio (Films)
 */
-wp_nav_menu();
-
 ?>
 
+<div class="grid_12 nav">
+	<?wp_nav_menu();?>
+</div>
 
 <?php
 // Loop to get Film top content
@@ -15,6 +16,7 @@ wp_nav_menu();
 			the_post();
 			the_title(); 
 			the_excerpt();
+			the_meta();
 		}
 	}
 ?>  

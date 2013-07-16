@@ -1,6 +1,10 @@
 <?php get_header();?>
+
+<div class="grid_12 nav">
+	<?wp_nav_menu();?>
+</div>
 <?php 
-	wp_nav_menu();
+
 	if ( have_posts()  ) {
 		while ( have_posts() ) {
 			the_post();

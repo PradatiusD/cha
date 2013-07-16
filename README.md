@@ -1,4 +1,4 @@
 cha
 ===
 
-Custom Wordpress Theme
+Custom Wordpress Theme written with SASS

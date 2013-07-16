@@ -20,4 +20,5 @@ register_post_type('films', array(
 'author',
 'page-attributes',)
 ) );
+
 ?>
