@@ -1438,7 +1438,7 @@ div.dark_rounded #pp_full_res .pp_inline, div.dark_square #pp_full_res .pp_inlin
   display: none; }
 
 body {
-  background-image: url(../images/cream_dust.png);
+  background-image: url(./images/cream_dust.png);
   color: #f2f2f2;
   height: 100%; }
 
@@ -1496,7 +1496,7 @@ p {
   margin-top: 1em; }
 
 .nav {
-  background-image: url(../images/knit.png);
+  background-image: url(./images/knit.png);
   color: #f2f2f2;
   height: 2em;
   margin-top: 1em;

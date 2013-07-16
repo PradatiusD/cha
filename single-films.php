@@ -6,7 +6,7 @@ Template Name: Portfolio (Films)
 ?>
 
 <div class="grid_12 nav">
-	<?wp_nav_menu();?>
+	<?php wp_nav_menu();?>
 </div>
 
 <?php
