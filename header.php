@@ -8,7 +8,7 @@
 		<title>Cristina Ramos | Acting & Theatre Professional</title>
 		<link <?php echo "href='" . get_template_directory_uri(). '/style.css' . "'" ?> rel="stylesheet">   
 		<link href='http://fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans+Condensed:700|Fjalla+One' rel='stylesheet' type='text/css'>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<?php wp_head(); ?>
 	</head>
 	<body>
 	<div class="container_12">
