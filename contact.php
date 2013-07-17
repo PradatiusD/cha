@@ -10,7 +10,7 @@ Template Name: Contact Page
 
 <div class="grid_5 contact" align="center">
 
-	<form <?php echo "action='" . get_template_directory_uri() . "contact-form.php" . "'" ?> class="form" method="post">
+	<form <?php echo "action='" . get_template_directory_uri() . "/contact-form.php" . "'" ?> class="form" method="post">
 		<h2 align="center"> Contact</h2>
 		<p>I'd love to hear from you, and I look forward to any and all creative collaboration!</p>
 		<br>
