@@ -22,5 +22,3 @@ register_post_type('films', array(
 ) );
 
 ?>
-
-<?php show_admin_bar( true ); ?>

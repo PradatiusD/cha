@@ -4,6 +4,7 @@
 		<meta name="description" content="Actress, dancer, singer, writer, director, designer, and Jill-of-All-Trades taking over the Big Apple!">
 		<meta name="keywords" content="Acting, New York, dancer, singer, writer, director, designer">
 		<meta name="author" content="http://twitter.com/PradaDesigners">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
 		<title>Cristina Ramos | Acting & Theatre Professional</title>
 		<link <?php echo "href='" . get_template_directory_uri(). '/style.css' . "'" ?> rel="stylesheet">   

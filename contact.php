@@ -10,7 +10,7 @@ Template Name: Contact Page
 
 <div class="grid_5 contact" align="center">
 
-	<form <?php echo "action='" . get_template_directory_uri() . "/contact-form.php" . "'" ?> class="form" method="post">
+	<form <?php echo "action='" . get_template_directory_uri() . "contact-form.php" . "'" ?> class="form" method="post">
 		<h2 align="center"> Contact</h2>
 		<p>I'd love to hear from you, and I look forward to any and all creative collaboration!</p>
 		<br>
@@ -36,7 +36,7 @@ Template Name: Contact Page
 		<p> </p>
 	</form>
 </div>
-<div class="grid_7" align="center" id="load" style="">
+<div class="grid_7" align="center" id="load" style="display:none">
 	<img <?php echo "src='" . get_template_directory_uri(). '/images/Cha.jpg' . "'" ?> style="width:540px">
 	<img <?php echo "src='" . get_template_directory_uri(). '/images/divider-top.png' . "'" ?> style="margin-top:30px">
 	<div class="social">

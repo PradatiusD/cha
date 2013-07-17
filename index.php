@@ -1,7 +1,8 @@
 <?php get_header();?>
 
-<div class="grid_12 nav">
-	<?wp_nav_menu();?>
+	<div class="grid_12 nav">
+		<?wp_nav_menu();?>
+	</div>
 </div>
 <?php 
 
