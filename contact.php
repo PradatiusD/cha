@@ -14,8 +14,8 @@ Template Name: Contact Page
 		<h2 align="center"> Contact</h2>
 		<p>I'd love to hear from you, and I look forward to any and all creative collaboration!</p>
 		<br>
-		Thanks,<br>
-		Cha<br>
+		<p>Thanks,</p>
+		<p>Cha</p>
 		<input type="text" name="yourname" placeholder="Your Name"><br>
 		<input type="text" name="email" placeholder="Your E-mail Address"><br>
 		<input type="text" name="phonenumber" placeholder="Phone number"><br>

@@ -42,8 +42,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 
-  body {background-image:url(./images/cream_dust.png); color:#f2f2f2; height:100%;}
-  h1, h2 {font-size: 4em; color: #297217; font-weight: normal; line-height: 2em; font-family: 'Grand Hotel', cursive;}
+  body {
+    background-image:url(./images/cream_dust.png);
+    color:#f2f2f2;
+    height:100%;
+  }
+
+  h1, h2 {
+    font-size: 4em;
+    color: #297217;
+    font-weight: normal;
+    line-height: 2em; 
+    font-family: 'Grand Hotel', cursive;
+  }
+  h1 {
+    text-align: center;
+    display: block;
+  }
   p {color: #464646; font-family: 'Georgia'}
   .container_12 {background-color:white;}
   .logo {margin-top:15px}
@@ -74,7 +89,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
         padding: .5em;
     }
 }  
-.videobio {
+.videobio, .blog {
     h2{ font-family: 'Open Sans Condensed', sans-serif;
       line-height: 1em;
       font-size: 2.5em;
@@ -94,6 +109,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
     }
     p {
         margin-top:1em;
+    }
+    a.postlink {
+      text-decoration: none;
+      h2 {
+        @include transition (0.8s);
+        color: #910B91;
+        &:hover {
+          color: #266F26;
+        }        
+      }
+    }
+    a.more-link {
+      background: #910B91;
+      color: #FFF;
+      text-decoration: none;
+      padding: 0.5em;
+      border-radius: 1em;
     }
 } 
 .nav {

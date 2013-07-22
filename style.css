@@ -1449,6 +1449,10 @@ h1, h2 {
   line-height: 2em;
   font-family: 'Grand Hotel', cursive; }
 
+h1 {
+  text-align: center;
+  display: block; }
+
 p {
   color: #464646;
   font-family: 'Georgia'; }
@@ -1477,23 +1481,39 @@ p {
 .videobionoheader .clear {
   padding: .5em; }
 
-.videobio h2 {
+.videobio h2, .blog h2 {
   font-family: 'Open Sans Condensed', sans-serif;
   line-height: 1em;
   font-size: 2.5em;
   margin: 0.5em 0em .5em 0em;
   color: #910B91; }
-.videobio h3 {
+.videobio h3, .blog h3 {
   font-family: 'fjalla one';
   font-weight: 100;
   font-size: 1.5em;
   color: #266F26;
   line-height: .5em;
   margin: 1em 0em 1em 0em; }
-.videobio .clear {
+.videobio .clear, .blog .clear {
   padding: .5em; }
-.videobio p {
+.videobio p, .blog p {
   margin-top: 1em; }
+.videobio a.postlink, .blog a.postlink {
+  text-decoration: none; }
+  .videobio a.postlink h2, .blog a.postlink h2 {
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    color: #910B91; }
+    .videobio a.postlink h2:hover, .blog a.postlink h2:hover {
+      color: #266F26; }
+.videobio a.more-link, .blog a.more-link {
+  background: #910B91;
+  color: #FFF;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 1em; }
 
 .nav {
   background-image: url(./images/knit.png);
