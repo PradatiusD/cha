@@ -158,17 +158,49 @@ Use it to make something cool, have fun, and share what you've learned with othe
   img:hover{ @include opacity (0.6);};
   b {font-family: 'Open Sans Condensed', sans-serif; margin-top:1em;}
 }
-.divider {margin: 3em 0em 2em 0em;}
+.divider {
+    margin: 3em 0em 2em 0em;
+    img {
+        display: block;
+        width:480px;
+        margin:0 auto;
+    }
+}
 
 .front {
-  background-color: black;
-  @include radius (1em);
+    background-color: black;
+    @include radius (1em);
+    position:relative;
+    top:0;
+    left:0;
+    .homepage-Cha { 
+        position: absolute;
+        z-index: 1000;
+        top: 37px;
+        right: 38px;
+    }
 }
 .media p {margin:15px 0px 15px 0px; font-size:15px}
-.resume h2 {margin-top:80px; font-size:40px; }
-.resume h3 {margin:50px 0px 20px 0px; font-size:25px; color:#2b700d;}
-.resume p, .resume h4 {font-family: 'Sanchez', serif;margin:25px 0px 0px 0px;}
-.resume h4 {color:#bb47ac;}
+
+.resume {
+    h2 {
+        margin-top:80px;
+        font-size:40px;
+    }
+    h3 {
+        margin:50px 0px 20px 0px;
+        font-size:25px;
+        color:#2b700d;
+    }
+    p, h4 {
+       font-family: 'Sanchez', serif;
+       margin:25px 0px 0px 0px; 
+    }
+    h4 {
+        color:#bb47ac;
+    }
+}
+
 .social img {padding-top: 14px;
 padding-bottom: 10px;transition: .6s;-moz-transition: .6s; /* Firefox 4 */-webkit-transition: .6s; /* Safari and Chrome */-o-transition: .6s; /* Opera */}
 .social img:hover {

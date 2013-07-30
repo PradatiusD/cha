@@ -19,13 +19,13 @@ Template Name: Portfolio (Theatre)
 					ob_start();
 					the_content();
 					$cha_content = ob_get_clean();
-				?>
+		?>	
 	</div>
 
 	<div id="tabs">
 	        <div class="grid_4 " align="center">
 	            <a 	<?php
-					$pdflink = get_the_excerpt();
+					$pdflink = get_field( 'pdf_link' );
 					echo 'href="' . $pdflink. '" ';
 				?> target="_blank"><img <?php echo "src='" . get_template_directory_uri(). '/images/doc.png' . "'" ?>><br>
 	            <b>Download Resume</b></a>
@@ -38,6 +38,7 @@ Template Name: Portfolio (Theatre)
 	            <a href="#photo"><img  <?php echo "src='" . get_template_directory_uri(). '/images/camera.png' . "'" ?>><br>
 	            <b>View Pictures</b></a> 
 	        </div>
+	        <?php if ( dynamic_sidebar('theatre-widget-area') ) : else : endif; ?>
 	        <div class="grid_12 divider" align="center">
 	            <img <?php echo "src='" . get_template_directory_uri(). '/images/gray-divider.png' . "'" ?>>
 	        </div> 

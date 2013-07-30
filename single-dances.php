@@ -21,16 +21,24 @@ Template Name: Portfolio (Dance)
 	<?php
 			}
 		}
+	if ( dynamic_sidebar('dance-widget-area') ) : else : endif; 
 	?>
+
 
 <div class="videobio" id="video">
 	<?php
+	// Loop for the custom post type for Dances
 	query_posts( 'post_type=dances' );
 		if ( have_posts()  ) {
 			while ( have_posts() ) {
 			the_post(); ?>
 	<div class="grid_5">
+		<a <?php
+			$youtube_link = get_field('youtube_link');
+			echo 'target="_blank" href="http://www.youtube.com/watch?v='.$youtube_link.'"' 
+		?> >
 		<?php the_post_thumbnail(array(370,277)); ?>
+		</a>
 	</div>
 				
 	<div class="grid_7">

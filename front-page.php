@@ -3,9 +3,17 @@
 	<div class="grid_12 nav">
 		<?wp_nav_menu();?>
 	</div>
+
+	<!-- Start the WP loop -->
+	<?php 
+		if ( have_posts() ) {
+			while ( have_posts() ) {
+	?>
+
 	<div id="load" style="display:none;">
 		<div class="grid_12 front">
-	        <img <?php echo "src='" . get_template_directory_uri(). '/images/Front-Page.png' . "'" ?>>  
+	        <img <?php echo "src='" . get_template_directory_uri(). '/images/Front-Page.png' . "'" ?>>
+	        <?php the_post_thumbnail( array(391,487), array('class' => "homepage-Cha") ); ?>  
 	    </div>
 	    <div class="grid_12 social" align="center">
 	        <a href="http://www.linkedin.com/pub/cristina-m-ramos/54/644/106"><img <?php echo "src='" . get_template_directory_uri(). '/images/social/social-02.png' . "'" ?> height="50"></a>
@@ -19,9 +27,9 @@
 		<div><h6><a href="#" id="learn" style="color: rgb(151, 11, 151);">Read more about me here</a></h6></div>
 	<div id="bio">
 
-	<?php 
-		if ( have_posts() ) {
-			while ( have_posts() ) {
+
+	<!-- End WP loop -->
+	<?php
 				the_post(); 
 				the_content();
 			}

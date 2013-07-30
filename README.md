@@ -2,10 +2,20 @@ cha
 ===
 
 Custom Wordpress Theme written with the following tools:
-* SASS (http://sass-lang.com/)
-* 960.css (http://960.gs/)
-* PrettyPhoto (http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/)
+* [SASS](http://sass-lang.com/)
+* [960.css](http://960.gs/)
+* [PrettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/)
+* [Advanced Custom Fields](http://www.advancedcustomfields.com/) with particular thanks to [Team Treehouse](http://blog.teamtreehouse.com/adding-custom-fields-to-a-custom-post-type-the-right-way)
 
-This custom Wordpress theme has three custom post types and is mostly meant for the use case of this website, though as I work on it more and more I'll do what I can to make it more and more generalized and customizable.
+### Documentation
 
-The theme does take use of the Advanced Custom Fields post http://blog.teamtreehouse.com/adding-custom-fields-to-a-custom-post-type-the-right-way
+##### Homepage
+Featured image needs to be 391px by 487px in order to be displayed correctly.
+
+#### Theatre, Films, and Dance Pages
+* To change resume link, use 'pdf_link' as the custom field.  Be sure to use the full URL of the pdf file that you find after uploading it to the media folder.
+* To manipulate what is displayed underneath the title/resume icons, go to the Widget area and use a text widget with the appropriate widget area to update text in those particular locations.
+
+### Theatre, Films, and Dance Custom Post Types
+* For a youtube video link use the youtube_link as the custom field, using the unique youtube video id.
+* The featured images _must_ be 370px by 277px for it to display consistently.

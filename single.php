@@ -13,6 +13,7 @@
 		<div class="grid_8 prefix_2 suffix_2 blog">
 		<?php		
 			the_post();
+			the_post_thumbnail( array(605,146));
 			?>
 
 			<?php the_title('<h2>','</h2>'); ?>

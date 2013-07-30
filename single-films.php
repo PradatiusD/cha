@@ -21,8 +21,8 @@ Template Name: Portfolio (Films)
 	<div id="tabs">
 	        <div class="grid_4 prefix_2" align="center">
 	            <a 	<?php
-					$pdflink = get_the_content();
-					echo 'href="' . $pdflink. '"';
+		            $pdflink = get_field( 'pdf_link' );
+					echo 'href="' .$pdflink. '"';
 				?> target="_blank"><img <?php echo "src='" . get_template_directory_uri(). '/images/doc.png' . "'" ?>><br>
 	            <b>Download Resume</b></a>
 	        </div>
@@ -30,6 +30,7 @@ Template Name: Portfolio (Films)
 	            <a href="#video"><img <?php echo "src='" . get_template_directory_uri(). '/images/video.png' . "'" ?>><br>
 	            <b>Watch Videos</b></a>
 	        </div>
+	        <?php if ( dynamic_sidebar('film-widget-area') ) : else : endif; ?>
 	        <div class="grid_12 divider" align="center">
 	            <img <?php echo "src='" . get_template_directory_uri(). '/images/gray-divider.png' . "'" ?>>
 	        </div> 
